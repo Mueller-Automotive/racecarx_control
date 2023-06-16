@@ -20,7 +20,10 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            'publisher = racecarx_control.publisher:main'
+            'sample_publisher = racecarx_control.sample_publisher:main',
+            'twist_publisher = racecarx_control.twist_publisher:main',
+            'sample_listener = racecarx_control.sample_listener:main',
+            'camera_listener = racecarx_control.camera_listener:main'
         ],
     },
 )
